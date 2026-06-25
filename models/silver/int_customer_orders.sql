@@ -1,3 +1,9 @@
+{{ config(
+    materialized='view',
+    database='dish_dev',
+    schema='silver'
+)}}
+
 select
 
 o.order_id,
