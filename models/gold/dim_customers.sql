@@ -2,7 +2,10 @@
     materialized='table',
     database='dish_dev',
     schema='gold',
-    alias='Dim_customers'
+    alias='Dim_customers',
+    tags=['Final'],
+    pre_hook=["use warehouse DBT_XS"]
+
 )}}
 
 select

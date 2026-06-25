@@ -1,7 +1,8 @@
 {{ config(
     materialized='table',
     database='dish_dev',
-    schema='gold'
+    schema='gold',
+    pre_hook=["use warehouse DBT_XS"]
 )}}
 
 select
