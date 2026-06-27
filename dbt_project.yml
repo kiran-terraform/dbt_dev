@@ -1,22 +1,20 @@
-name: 'Dish_technologies'
+name: "Dish_technologies"
 version: 2
 
-profile: 'Dish_technologies'
+profile: "Dish_technologies"
 
-model-paths : ["models"]
-seed-paths : ["seeds"]
+model-paths: ["models"]
+seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-test-paths : ["tests"]
+test-paths: ["tests"]
 
-
-models :
-  Dish_technologies :
-
-    gold :
-      +schema : GOLD
+models:
+  Dish_technologies:
+    gold:
+      +schema: GOLD
       +materialized: table
 
-    silver :
-      +schema : SILVER
+    silver:
+      +schema: SILVER
       +materialized: view
